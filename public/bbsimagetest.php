@@ -13,6 +13,7 @@ if (isset($_POST['body'])) {
       header("HTTP/1.1 302 Found");
       header("Location: ./bbsimagetest.php");
     }
+    }
 
     // 元のファイル名から拡張子を取得
     $pathinfo = pathinfo($_FILES['image']['name']);
@@ -74,3 +75,4 @@ $select_sth->execute();
     </dd>
   </dl>
   <?php endforeach ?>
+  
