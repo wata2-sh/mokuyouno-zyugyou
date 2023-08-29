@@ -1,0 +1,11 @@
+--2023-05-25 02:29:53--  https://pbs.twimg.com/media/Fw75NSraEAEt4Tg?format=jpg
+Resolving pbs.twimg.com (pbs.twimg.com)... 146.75.36.159, 2606:2800:220:1410:489:141e:20bb:12f6
+Connecting to pbs.twimg.com (pbs.twimg.com)|146.75.36.159|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 70894 (69K) [image/jpeg]
+Saving to: ‘public/images/k.jpg’
+
+public/images/k.jpg         0%[                                    ]       0  --.-KB/s               public/images/k.jpg       100%[===================================>]  69.23K  --.-KB/s    in 0.002s  
+
+2023-05-25 02:29:53 (39.8 MB/s) - ‘public/images/k.jpg’ saved [70894/70894]
+
