@@ -41,7 +41,7 @@ $select_sth = $dbh->prepare('SELECT * FROM kadai2 ORDER BY created_at DESC');
 $select_sth->execute();
 ?>
 <head>
-  <title>取りあえず仮提出</title>
+  <title>最終課題</title>
 </head>
 
 <!-- フォームのPOST先はこのファイル自身にする -->
