@@ -1,0 +1,139 @@
+第一回目
+下記のdockerコンテナ作成
+vim compose.yml
+
+dockerfileにphpredisを導入
+
+以下のファイルの作成
+vim public/redis_counter.php
+vim public/redis_bbs.php
+vim public/redis_bbs2.php
+
+第二回
+セッションを実装
+
+sessioncounter.php
+sessioncounter2.php を追加
+
+第三回
+mysqlに以下の内容を追加
+
+CREATE TABLE `users` (
+    `id` INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    `name` TEXT NOT NULL,
+    `email` TEXT NOT NULL,
+    `password` TEXT NOT NULL,
+    `created_at` DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+
+ファイル作成
+vim public/signup.php
+vim public/signup_finish.php
+
+ログイン画面
+vim public/login.php
+ログイン完了画面
+vim public/login_finish.php
+
+第四回
+以下のファイル内容を変更
+vim public/signup.php
+vim public/login.php
+
+第五回
+以下のファイル内容を変更
+vim php.ini
+vim Dockerfile
+vim public/edit_name.php
+vim public/signup.php
+vim public/login.php
+vim public/login_finish.php
+
+第六回
+テーブルusersに以下の内容を追加
+ALTER TABLE `users` ADD COLUMN icon_filename TEXT DEFAULT NULL;
+
+ファイルを作成
+public/setting
+vim public/setting/icon.php
+vim public/profile.php
+vim public/introduction.php
+
+第七回
+以下のテーブルを削除
+bbs_entries
+
+新しくbbs_entriesを作成
+
+ファイルを追加
+vim public/bbs.php
+
+以下のファイル内容を変更
+vim public/login.php
+vim public/login_finish.php
+vim public/signup.php
+vim public/signup_finish.php
+vim public/bbs.php
+php.ini
+
+第八回
+以下のファイル内容を変更
+vim public/bbs.php
+vim public/profile.php
+vim public/setting/icon.php
+vim public/setting/index.php
+vim public/setting/cover.php
+
+ファイルを作成
+vim public/setting/birthday.php
+
+下記のファイルを移動
+vim public/introduction.php
+        ↓
+vim public/setting/introduction.php
+
+vim public/edit_name.php
+        ↓
+vim public/setting/name.php
+
+userテーブルに以下を追加
+ALTER TABLE `users` ADD COLUMN cover_filename TEXT DEFAULT NULL;
+ALTER TABLE `users` ADD COLUMN birthday DATE DEFAULT NULL;
+
+第九回
+テーブルにuser_relationshipsを作成
+
+ファイルを作成
+vim public/follow.php 
+vim public/follow_list.php
+vim public/follower_list.php
+
+ファイル内容を変更
+vim public/profile.php
+
+第十回
+ファイルを作成
+vim public/timeline.php
+vim public/timeline_in.php
+vim public/timeline_subquery.php
+
+第十一回
+ファイルを作成
+vim public/users.php
+
+ファイル内容を変更
+vim public/login_finish.php
+vim public/profile.php
+vim public/setting/index.php
+vim public/timeline.php
+vim public/bbs.php
+vim public/users.php
+vim public/follow.php
+
+第十二回
+ファイルを作成
+vim public/timeline_json.php
+
+ファイル内容を変更
+vim public/timeline/php
+vim public/timeline_json.php
